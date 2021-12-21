@@ -7,4 +7,134 @@ light blue: #1c5380
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  background-image: linear-gradient(to bottom, #1c5380, #06365f);
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  height: 250px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.img-container {
+  height: 550px;
+  padding: 30px;
+}
+
+.img-container img {
+  height: 580px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+  margin-left: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header>img {
+  height: 60px;
+}
+
+.header button {
+  width: 100px;
+  padding: 0 10px;
+  background: linear-gradient(to bottom, #6a8eae, #1c5380);
+  height: 50px;
+  color: #fff;
+  border: none;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.header button img {
+    margin: -5px 5px -5px 0;
+}
+
+.main-content {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: none;
+  padding: 30px;
+  border-radius: 10px;
+  background: #fff;
+  margin-top: 50px;
+}
+
+.main-content h2 {
+  color: #06365f;
+}
+
+.shadows
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.shadows:before, .shadows:after
+{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.shadows:after
+{
+  right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.appstores {
+  display: flex; 
+}
+
+.appstores img {
+  margin: 30px 20px 0 0;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 10px
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: #1c5380;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
 }
